@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog Konfirmasi</title>
+  </head>
+  <body>
+    <script>
+      function tampilkanDialog() {
+        var inginTahu = confirm("Apakah kamu ingin mengetahui tanggal lahir kamu?");
+        var tanggalLahirBenar = false;
+
+        while (inginTahu && !tanggalLahirBenar) {
+          var jawabanKedua = confirm("Apakah kamu lahir pada tanggal 5 Maret 2003?");
+          if (jawabanKedua) {
+            tanggalLahirBenar = true;
+            document.write("<h1>Benar! anda lahir tanggal 5 maret 2003.</h1>");
+          } else {
+            var inginCobaLagi = confirm("Jawabanmu salah. Apakah kamu ingin mencoba lagi?");
+            if (!inginCobaLagi) {
+              tanggalLahirBenar = true;
+              document.write("<h1>yasuda kalo gamau tahuu</h1>");
+            }
+          }
+        }
+      }
+
+      tampilkanDialog();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //bilangan yang terdiri dari
+      //1 yang artinya true dan
+      //0 itu false
+      //berlaku untuk tipe data int dll
+
+      var a = 1;
+      var b = 0;
+
+      //boperator itwise AND
+      var hasil = a & a;
+      document.write(`${a} & ${a} = ${hasil} <br>`);
+
+      var hasil = a & b;
+      document.write(`${a} & ${b} = ${hasil} <br>`);
+
+      var hasil = b & b;
+      document.write(`${b} & ${b} = ${hasil} <br>`);
+
+      var hasil = b & a;
+      document.write(`${b} & ${a} = ${hasil} <br>`);
+    </script>
+    <br /><br />
+    <script>
+      var a = 1;
+      var b = 0;
+
+      //operator bitwise or
+      var hasil = a | a;
+      document.write(`${a} | ${a} = ${hasil} <br>`);
+
+      var hasil = a | b;
+      document.write(`${a} | ${b} = ${hasil} <br>`);
+
+      var hasil = b | b;
+      document.write(`${b} | ${b} = ${hasil} <br>`);
+
+      var hasil = b | a;
+      document.write(`${b} | ${a} = ${hasil} <br>`);
+    </script>
+
+    <br /><br />
+    <script>
+      var a = 1;
+      var b = 0;
+
+      //operator bitwise xor
+      //nilai sama false
+      //nilai beda true
+      var hasil = a ^ a;
+      document.write(`${a} ^ ${a} = ${hasil} <br>`);
+
+      var hasil = a ^ b;
+      document.write(`${a} ^ ${b} = ${hasil} <br>`);
+
+      var hasil = b ^ b;
+      document.write(`${b} ^ ${b} = ${hasil} <br>`);
+
+      var hasil = b ^ a;
+      document.write(`${b} ^ ${a} = ${hasil} <br>`);
+    </script>
+    <br />
+    <br />
+
+    <script>
+      var a = 5;
+      var b = 3;
+      var c = 1;
+
+      //bitwise let shift
+      var hasil = a << b;
+      document.write(`${a} << ${b} = ${hasil} <br>`);
+
+      var hasil = (b << a) << c;
+      document.write(`${b} << ${a} << ${c} = ${hasil} <br>`);
+      //3+3=6 6+6=12 12+12=24 24+24=48 48+48=96 96+96=192
+
+      //bitwise let ri
+      var hasil = a >> b;
+      document.write(`${a} >> ${b} = ${hasil} <br>`);
+      //5:2=2 2:2=1 1:2=0
+
+      var hasil = b >> a;
+      document.write(`${b} >> ${a} = ${hasil} <br>`);
+    </script>
+
+    <br />
+    <br />
+    <script>
+      //materii ternaryyy
+      var pertanyaan = confirm("suka aku apa tidak?");
+
+      var hasil = pertanyaan ? "love u too" : "yahhhhhh:(";
+      document.write(hasil);
+    </script>
+  </body>
+</html>

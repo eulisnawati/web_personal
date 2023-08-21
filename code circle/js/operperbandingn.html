@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var elisna = 29;
+      var dilla = 7;
+      var jany = 5;
+
+      // sama dengan, bernilai true jika nilai sama, bernilai false jika nilai berbeda
+      var hasil = (dilla == elisna) == jany;
+      document.write(`${elisna} == ${dilla} == ${jany} = ${hasil} <br/>`);
+
+      //tidak sama dengan, selagi nilai tidak sama berarti true, kalo dua2nya sama brrti false
+      var hasil = dilla != elisna;
+      document.write(`${elisna} != ${dilla} = ${hasil} <br/>`);
+
+      var hasil = dilla !== elisna;
+      document.write(`${elisna} !==${dilla} = ${hasil} <br/>`);
+
+      var hasil = elisna > dilla;
+      document.write(`${elisna} > ${dilla} = ${hasil} <br/>`);
+
+      var hasil = elisna < dilla;
+      document.write(`${elisna} < ${dilla} = ${hasil} <br/>`);
+
+      var hasil = elisna >= dilla;
+      document.write(`${elisna} >= ${dilla} = ${hasil} <br/>`);
+
+      var hasil = elisna <= dilla;
+      document.write(`${elisna}<=${dilla} = ${hasil} <br/>`);
+    </script>
+  </body>
+</html>

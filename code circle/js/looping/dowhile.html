@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var ulangi = confirm("Klik jika ingin ke syurga");
+      var counter = 0;
+
+      do {
+        counter++;
+        ulangi = confirm("Klik jika yakin masuk syurga");
+      } while (ulangi);
+
+      document.write("Anda akan masuk surga karna telak klik sebanyak " + counter + "kali");
+    </script>
+  </body>
+</html>

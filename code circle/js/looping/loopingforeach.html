@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //leng untuk memeriksa panjang variable dgn tipe data string
+      var hewan = ["kucing", "unta", "sapi", "ayam"];
+
+      for (i = 0; i < hewan.length; i++) {
+        document.write(i + ". " + hewan[i] + "<br/>");
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <script>
+      //perbedaan for dengan yang atas di penulisa for
+      var hewan = ["kucing", "unta", "sapi", "ayam"];
+
+      for (i in hewan) {
+        document.write(i + ". " + hewan[i] + "<br/>");
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <script>
+      var hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+
+      for (i in hari) {
+        document.write(i + ". " + hari[i] + "<br/>");
+      }
+    </script>
+  </body>
+</html>
